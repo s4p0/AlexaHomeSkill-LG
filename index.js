@@ -1,7 +1,7 @@
 /*
 /////
 /// needs to define a settings.js file with the following content from your skill
-////
+*/
 
 
 require('./settings')
