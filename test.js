@@ -1,0 +1,6 @@
+let data = { "cookie": { "channels": "[{\"channelName\":\"BOA VONTADE TV HD\",\"channelNumber\":\"11-1\"},{\"channelName\":\"RBI HD\",\"channelNumber\":\"14-1\"},{\"channelName\":\"NOVO TEMPO HD\",\"channelNumber\":\"15-1\"},{\"channelName\":\"VANGUARDA HD SJC\",\"channelNumber\":\"16-1\"},{\"channelName\":\"TV DIARIO HD\",\"channelNumber\":\"19-1\"},{\"channelName\":\"Rede Vida HD\",\"channelNumber\":\"34-1\"},{\"channelName\":\"CAMARA BRASILIA\",\"channelNumber\":\"39-1\"},{\"channelName\":\"TV CÂM JAC\",\"channelNumber\":\"39-2\"},{\"channelName\":\"TV ALESP SP\",\"channelNumber\":\"39-3\"},{\"channelName\":\"TV SENADO\",\"channelNumber\":\"39-4\"},{\"channelName\":\"TV Aparecida HD\",\"channelNumber\":\"41-1\"},{\"channelName\":\"RIT TV\",\"channelNumber\":\"48-1\"},{\"channelName\":\"GAZETA HD\",\"channelNumber\":\"54-1\"},{\"channelName\":\"BAND VALE HD\",\"channelNumber\":\"57-1\"}]" } };
+const name = 'vanguarda taubaté';
+
+let list = JSON.parse(data.cookie.channels);
+const filtered = list.filter((item) => name.split(' ').some((partName) => item.channelName.toLowerCase().includes(partName)))
+console.log(filtered);
